@@ -19,6 +19,9 @@ $(document).ready(function(){
 });
 
 function startGame(){
+  for (var i=1; i<= 49; i+=1){
+    clearBox(i);
+  }
   document.turn = "Red";
   if(Math.random()< 0.5){
     document.turn= "Blue";
@@ -36,21 +39,20 @@ function nextMove(square){
   if (document.winner !=null){
     setMessage(document.winner + " all ready won the game!");
   }
-  else if (square.innerText==""){
-    square.innerText = document.turn;
+  else if (document.turn=="Red"){
+    square.innerHTML="<img id=redCircle />"
     switchTurn();
-  } else {
+  }
+  else if (document.turn=="Blue"){
+    square.innerHTML="<img id=blackCircle />"
+    switchTurn();
+  }
+  else {
     setMessage("That square has been taken");
   }
 }
 
-// function paintFunction (turn) {
-// if (document.turn === red){
-// code to paint red circle;
-// } else{
-//    code to paint blue circle;
-// }
-// }
+
 
 function switchTurn(){
 
@@ -78,7 +80,7 @@ function switchTurn(){
 // }
 
 function getBox(number){
-  return document.getElementById("s"+number).innerText;
+  return document.getElementById("s"+ number).innerText;
 }
 
 function clearBox(number){

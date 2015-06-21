@@ -24,12 +24,30 @@
 }
 
 #newGame {
-margin-bottom: 10px;
-text-align: center;
-padding: 5px;
-border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #message {
   margin-bottom: inherit;
+}
+
+#redCircle{
+  width: 75px;
+  height: 75px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50%;
+}
+
+#blackCircle{
+  width: 75px;
+  height: 75px;
+  background: blue;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50%
 }
