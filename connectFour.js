@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  console.log("Lets do this!")
+  console.log("jQuery online!")
 
   $("#newGame").click(function(){
     startGame();
