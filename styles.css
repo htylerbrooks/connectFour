@@ -1,0 +1,35 @@
+* {
+  font-family:"Ubuntu", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  color: blue;
+  background-color: DEE3DB;
+}
+
+
+#board {
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #1573Ec;
+  width: 700px;
+  height: 600px;
+}
+
+.square {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+#newGame {
+margin-bottom: 10px;
+text-align: center;
+padding: 5px;
+border-radius: 5px;
+}
+
+#message {
+  margin-bottom: inherit;
+}
