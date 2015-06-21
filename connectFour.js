@@ -36,8 +36,11 @@ function setMessage(msg){
 
 
 function nextMove(square){
-  if (document.winner !=null){
+  if (document.winner !=null ){
     setMessage(document.winner + " all ready won the game!");
+  }
+  else if(square.innerHTML !==""){
+    setMessage("That square has been taken!")
   }
   else if (document.turn=="Red"){
     square.innerHTML="<img id=redCircle />"
