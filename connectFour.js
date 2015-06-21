@@ -44,6 +44,14 @@ function nextMove(square){
   }
 }
 
+// function paintFunction (turn) {
+// if (document.turn === red){
+// code to paint red circle;
+// } else{
+//    code to paint blue circle;
+// }
+// }
+
 function switchTurn(){
 
   if (document.turn ==="Red"){
@@ -53,4 +61,26 @@ function switchTurn(){
     document.turn = "Red";
     setMessage(document.turn + "'s" + " Turn!");
   }
+}
+
+// function checkForWinner (turn){
+// var result = false;
+// if(checkRowAndDiagnols(){}
+// return result;
+// }
+
+// function checkRowAndDiagnols(a,b,c,d, turn){
+// var result = false;
+// if(getBox(a)==turn && getBox(b)==turn && getBox(c)==turn &&getBox(d)===turn){
+//  result = true;
+// }
+// return result;
+// }
+
+function getBox(number){
+  return document.getElementById("s"+number).innerText;
+}
+
+function clearBox(number){
+  return document.getElementById("s" + number).innerText = "";
 }
