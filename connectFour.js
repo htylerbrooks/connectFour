@@ -47,7 +47,7 @@ function nextMove(square){
     switchTurn();
   }
   else if (document.turn=="Blue"){
-    square.innerHTML="<img id=blackCircle />"
+    square.innerHTML="<img id=blueCircle />"
     switchTurn();
   }
   else {
