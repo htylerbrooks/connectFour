@@ -43,11 +43,27 @@
   border-radius: 50%;
 }
 
-#blackCircle{
+#blueCircle{
   width: 75px;
   height: 75px;
   background: blue;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50%
+}
+
+#blueWin {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#redWin {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
